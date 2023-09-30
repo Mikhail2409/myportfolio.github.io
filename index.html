@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- FONTAWESOME STYLES-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="assets/css/basic.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway|Nabla&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Barre de navigation -->
+    <div class="barre-top">
+      <div class="nav-bar ombre-card" id="fondWhite">
+        <a
+          href="index.html#home"
+          class="bar-item bouton-button logo"
+          id="espace-wide"
+          >ML</a
+        >
+        <!-- Right-sided navbar links -->
+        <div class="nav-right" id="nav-small">
+          <a
+            href="index.html#about"
+            class="bar-item bouton-button"
+            lang="en"
+            translate="no"
+            ><i class="fa fa-user"></i> ABOUT</a
+          >
+          <a
+            href="index.html#qa"
+            class="bar-item bouton-button"
+            lang="en"
+            translate="no"
+            ><i class="fa fa-bug"></i> QA</a
+          >
+          <a href="glide.html#glide" class="bar-item bouton-button"
+            ><i class="fas fa-mobile-alt"></i> MOBILE APP</a
+          >
+          <a href="game.html" class="bar-item bouton-button"
+            ><i class="fa fa-usd"></i> GAME</a
+          >
+          <a href="contact.html#contact" class="bar-item bouton-button"
+            ><i class="fa fa-envelope"></i> CONTACT</a
+          >
+        </div>
+        <!-- Lorsque le lien est cliqué, l'attribut `onclick` appelle la fonction JavaScript `sidebar_open()`. -->
+        <!--L'attribut `href` est défini à `"javascript:void(0)"`, ce qui signifie que le lien n'a pas de destination réelle et qu'il est simplement utilisé pour exécuter la fonction JavaScript lorsqu'il est cliqué.-->
+        <!--Ce bout de code crée un lien avec une icône de menu qui permet d'ouvrir ou de fermer la barre latérale. Lorsqu'il est cliqué, 
+          il appelle la fonction JavaScript `sidebar_open()` pour afficher ou masquer la barre latérale.-->
+        <a
+          href="javascript:void(0)"
+          class="bar-item nav-right hide-large hide-medium"
+          onclick="sidebar_open()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <!--Barre de navigation est initialement cachée grâce à la propriété "display: none" et l'identifiant "mySidebar" est attribué à cette barre de navigation.-->
+    <nav
+      class="sidebar fond-black ombre-card animate-left hide-medium hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <!--Pour masque la barre latérale en modifiant la propriété CSS `display` de l'élément ayant l'ID "mySidebar" en "none".-->
+      <a
+        href="javascript:void(0)"
+        onclick="sidebar_close()"
+        class="bar-item espace-large padding-16"
+        >Close ×</a
+      >
+      <!--Chaque lien a un attribut `onclick` qui appelle la fonction JavaScript `sidebar_close()`.-->
+      <a href="index.html#about" onclick="sidebar_close()" class="bar-item"
+        ><i class="fa fa-user"></i>ABOUT</a
+      >
+      <a
+        href="index.html#qa"
+        onclick="sidebar_close()"
+        class="bar-item"
+        lang="en"
+        translate="no"
+        ><i class="fa fa-bug"></i>QA</a
+      >
+      <a href="glide.html#glide" class="bar-item bouton-button"
+        ><i class="fas fa-mobile-alt"></i> MOBILE APP</a
+      >
+      <a href="game.html" onclick="sidebar_close()" class="bar-item"
+        ><i class="fa fa-usd"></i>GAME</a
+      >
+      <a href="contact.html#contact" onclick="sidebar_close()" class="bar-item"
+        ><i class="fa fa-envelope"></i>CONTACT</a
+      >
+    </nav>
+
+    <!-- Header avec image pleine hauteur -->
+    <header class="header-img" id="home">
+      <div class="text-display" style="padding: 48px">
+        <span class="xxxlarge" id="nav-small"
+          >Bienvenue sur mon site web Portfolio</span
+        ><br />
+        <span class="xxlarge hide-large hide-medium"
+          >Bienvenue sur mon site web Portfolio </span
+        ><br />
+        <p class="espace-large">Je suis un développeur web junior passionné</p>
+        <p>
+          <a
+            href="contact.html#contact"
+            class="bouton-button padding-large espace-large semi-opacity"
+            id="fondWhite"
+            >Contactez moi</a
+          >
+        </p>
+      </div>
+      <div class="bottom-left espace-large" style="padding: 24px 48px">
+        <i class="fa fa-facebook-official hover-opacity"></i>
+        <i class="fa fa-instagram hover-opacity"></i>
+        <i class="fa fa-github hover-opacity"></i>
+        <i class="fa fa-pinterest-p hover-opacity"></i>
+        <i class="fa fa-twitter hover-opacity"></i>
+        <i class="fa fa-linkedin hover-opacity"></i>
+      </div>
+    </header>
+
+    <!-- About Section -->
+    <div class="section-container" style="padding: 128px 16px" id="about">
+      <h3 class="text-center uppercase">Je suis un développeur web diplômé</h3>
+      <p class="text-center espace-large">
+        À l'école "La Piscine", j'ai acquis des compétences dans des langages
+        tels que HTML5, CSS3, JavaScript, ainsi que dans le framework Symfony4.
+      </p>
+      <p class="text-center espace-large">
+        J'ai également appris le langage SQL, les applications WAMP et MAMP pour
+        créer et gérer des bases de données.
+      </p>
+      <div class="row-padding text-center" style="margin-top: 64px">
+        <div class="quarter">
+          <i class="fab fa-html5 margin-bottom xxxlarge text-center"></i>
+          <p class="espace-large">J’adore !</p>
+          <p>
+            C’est un langage de balisage simple, universel et il est compatible
+            avec tous les navigateurs. Utilisé pour structurer et présenter du
+            contenu.
+          </p>
+        </div>
+        <div class="quarter">
+          <i class="fab fa-css3-alt margin-bottom xxxlarge"></i>
+          <p class="espace-large">Effets visuels !</p>
+          <p>
+            Offre une grande souplesse dans la conception de l'apparence des
+            sites web, permettant d'améliorer l'expérience utilisateur.
+          </p>
+        </div>
+        <div class="quarter">
+          <i class="fab fa-js-square margin-bottom xxxlarge"></i>
+          <p class="espace-large">Polyvalence !</p>
+          <p>
+            Permet de développer des applications web dynamiques et
+            interactives. C’est un langage incontournable pour construire des
+            expériences utilisateur modernes sur le Web.
+          </p>
+        </div>
+        <div class="quarter">
+          <i class="fab fa-symfony margin-bottom xxxlarge"></i>
+          <p class="espace-large">Efficace !</p>
+          <p>
+            Facilite la programmation en PHP grâce à sa syntaxe claire et
+            structurée, ses composants réutilisables et sa conception orientée
+            objet.
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <!-- Autodidacte Section -->
+    <div class="section-container light-grey" style="padding: 128px 16px">
+      <div class="row-padding">
+        <div class="col-1">
+          <h3>Autodidacte</h3>
+          <p>
+            Je suis actuellement engagé dans un processus d'autoformation en
+            développement no code.<br />
+            Les plateformes de développement sans code sont des outils puissants
+            qui permettent de créer des applications web et mobiles sans avoir à
+            écrire une seule ligne de code.<br />
+            L'une de ces plateformes, Glide, offre une gamme de fonctionnalités
+            et de composants préconçus qui facilitent le processus de
+            création.<br />
+            De plus, la Glide API no code propose de nombreuses intégrations
+            avec d'autres services populaires tels que Google Sheets, Airtable,
+            Stripe, et bien d'autres.<br />
+          </p>
+          <p>
+            <a href="glide.html#glide" class="bouton-button fond-black"
+              ><i class="fas fa-mobile-alt"></i> Voir mon œuvre
+            </a>
+          </p>
+        </div>
+        <div class="col-1">
+          <img
+            class="image-round"
+            src="assets/img/glide_api.png"
+            alt="Buildings"
+            width="700"
+            height="394"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- QA Section -->
+    <div class="section-container" style="padding: 128px 16px" id="qa">
+      <h3 class="text-center uppercase">Test d’applications</h3>
+      <p class="text-center espace-large">
+        J'ai acquis des compétences dans l'automatisation des tests en utilisant
+        certains outils clés tels que Postman, Robot Framework, JMeter et
+        Cypress.
+      </p>
+      <div class="row-padding" style="margin-top: 64px">
+        <div class="col-1 additional margin-bottom">
+          <div class="ombre-card">
+            <img src="assets/img/postman.jpg" alt="John" style="width: 100%" />
+            <div class="section-container">
+              <h3 lang="en" translate="no">Postman</h3>
+              <p class="semi-opacity">JavaScript</p>
+              <p>
+                Postman est un outil d'automatisation des tests API qui permet
+                aux développeurs de créer, exécuter et automatiser des tests sur
+                des API RESTful. Il utilise les méthodes de requête HTTP (GET,
+                POST, PUT, DELETE, etc.). Il utilise JavaScript pour écrire des
+                scripts de test et dispose d'une interface utilisateur
+                conviviale pour configurer et gérer les requêtes et les
+                assertions.
+              </p>
+              <p>
+                <button
+                  class="bouton-button light-grey contact-block"
+                  lang="en"
+                  onclick="window.open('postman.html');"
+                  target="_blank"
+                >
+                  <i class="fas fa-link"></i> Lien
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1 additional margin-bottom">
+          <div class="ombre-card">
+            <img
+              src="assets/img/robot_framework_390.png"
+              alt="Jane"
+              style="width: 100%"
+            />
+            <div class="section-container">
+              <h3 lang="en" translate="no">Robot Framework</h3>
+              <p class="semi-opacity">Python</p>
+              <p>
+                Robot Framework est un outil d'automatisation des tests
+                open-source qui permet de réaliser des tests d'acceptation, de
+                fonctionnalité et d'interface utilisateur. Il dispose d'une
+                syntaxe lisible par les humains, de bibliothèques étendues et de
+                nombreuses fonctionnalités permettant de gérer les tests, de
+                générer des rapports et d'intégrer des outils tiers.
+              </p>
+              <p>
+                <button
+                  class="bouton-button light-grey contact-block"
+                  lang="en"
+                  onclick="window.open('robot.html');"
+                  target="_blank"
+                >
+                  <i class="fas fa-link"></i> Lien
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1 additional margin-bottom">
+          <div class="ombre-card">
+            <img src="assets/img/Jmeter.jpg" alt="Mike" style="width: 100%" />
+            <div class="section-container">
+              <h3 lang="en" translate="no">JMeter</h3>
+              <p class="semi-opacity">Java</p>
+              <p>
+                JMeter est un outil d'automatisation des tests de performance et
+                de charge. Il permet de simuler un grand nombre d'utilisateurs
+                simultanés, de générer des charges de travail pour tester les
+                performances d'une application sous différentes conditions et de
+                mesurer les temps de réponse, les capacités de traitement et les
+                performances globales de l'application.
+              </p>
+              <p>
+                <button
+                  class="bouton-button light-grey contact-block"
+                  lang="en"
+                  onclick="window.open('jmeter.html');"
+                  target="_blank"
+                >
+                  <i class="fas fa-link"></i> Lien
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-1 additional margin-bottom">
+          <div class="ombre-card">
+            <img
+              src="assets/img/cypress_390.jpg"
+              alt="Dan"
+              style="width: 100%"
+            />
+            <div class="section-container">
+              <h3 lang="en" translate="no">Cypress</h3>
+              <p class="semi-opacity">JavaScript</p>
+              <p>
+                Cypress est un framework d'automatisation des tests end-to-end
+                pour les applications web. Il permet de créer et d'exécuter des
+                tests en temps réel, d'inspecter les éléments de l'interface
+                utilisateur, de réaliser des simulations d'actions et de
+                vérifier les résultats attendus. Cypress offre une vue détaillée
+                des tests et facilite le débogage des failles éventuelles.
+              </p>
+              <p>
+                <button
+                  class="bouton-button light-grey contact-block"
+                  lang="en"
+                  onclick="window.open('cypress.html');"
+                  target="_blank"
+                >
+                  <i class="fas fa-link"></i> Lien
+                </button>
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center fond-black padding-64">
+      <a href="#home" class="bouton-button light-grey"
+        ><i class="fa fa-arrow-up margin-right"></i>To the top</a
+      >
+      <div class="xlarge margin-16">
+        <i class="fa fa-facebook-official hover-opacity"></i>
+        <i class="fa fa-instagram hover-opacity"></i>
+        <i class="fa fa-github hover-opacity"></i>
+        <i class="fa fa-pinterest-p hover-opacity"></i>
+        <i class="fa fa-twitter hover-opacity"></i>
+        <i class="fa fa-linkedin hover-opacity"></i>
+      </div>
+      <p>
+        Powered by
+        <a
+          href="https://github.com/Mikhail2409"
+          title="GitHub.Mikhail"
+          target="_blank"
+          >Mikhail</a
+        >
+      </p>
+    </footer>
+
+    <script src="assets/js/basic.js"></script>
+  </body>
+</html>

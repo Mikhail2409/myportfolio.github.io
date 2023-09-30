@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- FONTAWESOME STYLES-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="assets/css/basic.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway|Nabla&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+    <!-- Barre de navigation -->
+    <div class="barre-top">
+      <div class="nav-bar ombre-card" id="fondWhite">
+        <a
+          href="index.html#home"
+          class="bar-item bouton-button logo"
+          id="espace-wide"
+          >ML</a
+        >
+        <!-- Right-sided navbar links -->
+        <div class="nav-right" id="nav-small">
+          <a
+            href="index.html#about"
+            class="bar-item bouton-button"
+            lang="en"
+            translate="no"
+            ><i class="fa fa-user"></i> ABOUT</a
+          >
+          <a
+            href="index.html#qa"
+            class="bar-item bouton-button"
+            lang="en"
+            translate="no"
+            ><i class="fa fa-bug"></i> QA</a
+          >
+          <a href="glide.html#glide" class="bar-item bouton-button"
+            ><i class="fas fa-mobile-alt"></i> MOBILE APP</a
+          >
+          <a href="game.html" class="bar-item bouton-button"
+            ><i class="fa fa-usd"></i> GAME</a
+          >
+          <a href="contact.html#contact" class="bar-item bouton-button"
+            ><i class="fa fa-envelope"></i> CONTACT</a
+          >
+        </div>
+        <!-- Lorsque le lien est cliqué, l'attribut `onclick` appelle la fonction JavaScript `sidebar_open()`. -->
+        <!--L'attribut `href` est défini à `"javascript:void(0)"`, ce qui signifie que le lien n'a pas de destination réelle et qu'il est simplement utilisé pour exécuter la fonction JavaScript lorsqu'il est cliqué.-->
+        <!--Ce bout de code crée un lien avec une icône de menu qui permet d'ouvrir ou de fermer la barre latérale. Lorsqu'il est cliqué, 
+          il appelle la fonction JavaScript `sidebar_open()` pour afficher ou masquer la barre latérale.-->
+        <a
+          href="javascript:void(0)"
+          class="bar-item nav-right hide-large hide-medium"
+          onclick="sidebar_open()"
+        >
+          <i class="fa fa-bars"></i>
+        </a>
+      </div>
+    </div>
+
+    <!--Barre de navigation est initialement cachée grâce à la propriété "display: none" et l'identifiant "mySidebar" est attribué à cette barre de navigation.-->
+    <nav
+      class="sidebar fond-black ombre-card animate-left hide-medium hide-large"
+      style="display: none"
+      id="mySidebar"
+    >
+      <!--Pour masque la barre latérale en modifiant la propriété CSS `display` de l'élément ayant l'ID "mySidebar" en "none".-->
+      <a
+        href="javascript:void(0)"
+        onclick="sidebar_close()"
+        class="bar-item espace-large padding-16"
+        >Close ×</a
+      >
+      <!--Chaque lien a un attribut `onclick` qui appelle la fonction JavaScript `sidebar_close()`.-->
+      <a href="index.html#about" onclick="sidebar_close()" class="bar-item"
+        ><i class="fa fa-user"></i>ABOUT</a
+      >
+      <a
+        href="index.html#qa"
+        onclick="sidebar_close()"
+        class="bar-item"
+        lang="en"
+        translate="no"
+        ><i class="fa fa-bug"></i>QA</a
+      >
+      <a href="glide.html#glide" class="bar-item bouton-button"
+        ><i class="fas fa-mobile-alt"></i> MOBILE APP</a
+      >
+      <a href="game.html" onclick="sidebar_close()" class="bar-item"
+        ><i class="fa fa-usd"></i>GAME</a
+      >
+      <a href="contact.html#contact" onclick="sidebar_close()" class="bar-item"
+        ><i class="fa fa-envelope"></i>CONTACT</a
+      >
+    </nav>
+    
+    <!-- API Section -->
+    <div class="content" style="max-width: 1100px" id="glide">
+      <!-- Glide Section -->
+      <div class="row-padding padding-64" id="about">
+        <div class="col-1 m6 padding-large">
+          <img
+            src="assets/img/glide2.png"
+            class="image-round"
+            alt="Table Setting"
+            width="600"
+            height="750"
+          />
+        </div>
+
+        <div class="col-1 m6 padding-large">
+          <h1 class="text-center" lang="en" translate="no">Glide</h1>
+          <br />
+          <h5 class="text-center">Les avantages :</h5>
+          <p class="espace-large">
+            L'avantage de la Glide API no code est qu'elle permet de créer des
+            applications compatibles avec plusieurs plateformes, y compris
+            <span class="light-grey-tag">iOS</span> et
+            <span class="light-grey-tag">Android</span>. Accessibilité accrue
+            des données : L'intégration directe avec des services tels que
+            Google Sheets et Airtable permet aux utilisateurs de gérer
+            facilement et d'accéder à leurs données. Cela permet également de
+            synchroniser facilement les données entre l'application et d'autres
+            outils ou plateformes de manière fluide. Mises à jour facilitées :
+            Avec la mise à jour de la plateforme de Glide, les utilisateurs
+            bénéficient automatiquement des nouvelles fonctionnalités et
+            améliorations apportées à l'API.
+          </p>
+          <p class="espace-large text-grey">
+            J'ai créé une application utile -
+            <span class="light-grey-tag" lang="en" translate="no"
+              >Expense Tracker</span
+            >, qui permet de suivre les dépenses personnelles.
+          </p>
+        </div>
+      </div>
+      <!-- Expense Tracker -->
+      <div class="row-padding padding-64" id="menu">
+        <div class="col-1 l6 padding-large">
+          <h1 class="text-center" lang="en" translate="no">Expense Tracker</h1>
+          <br />
+          <h4 lang="en" translate="no">Onglet "Analyse"</h4>
+          <p class="text-grey">
+            Contient une représentation visuelle des dépenses et du montant
+            total des dépenses pour toute la durée d'utilisation
+          </p>
+          <br />
+
+          <h4>Intégration avec l'IA</h4>
+          <p class="text-grey">
+            Lorsqu'on appuie sur le bouton dédié à l'IA, il nous offre des
+            conseils précieux pour la gestion de notre budget.
+          </p>
+          <br />
+
+          <h4>Facilité visuelle</h4>
+          <p class="text-grey">Les dépenses sont grouppés par les dates.</p>
+          <br />
+
+          <h4>Ajouter une nouvelle dépense</h4>
+          <p class="text-grey">
+            Nous pouvons y accéder et afficher des informations détaillées.
+          </p>
+          <br />
+
+          <h4>Supprimer ou modifier</h4>
+          <p class="text-grey">
+            Par défaut la date se met actuelle, mais vous pouvez aussi mettre la
+            date souhaitée.
+          </p>
+        </div>
+
+        <div class="col-1 l6 padding-large">
+          <img
+            src="assets/img/glide1.png"
+            class="image-round"
+            alt="Menu"
+            style="width: 100%"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Autodidacte Section -->
+    <div class="section-container light-grey" style="padding: 128px 16px">
+      <div class="row-padding">
+        <div class="container col-1">
+          <h3>Vous pouvez tester cette application !</h3>
+          <p>
+            Pour commencer à utiliser cette application, vous avez le choix de
+            vous inscrire ou de vous connecter avec votre compte Google.<br />Vous
+            pouvez tester l’application en appuyant sur le bouton ou en scannant
+            QR Code.
+          </p>
+          <p>
+            <a
+              href="https://go.glideapps.com/play/xZ15geVNK8hPlbZulRES"
+              class="bouton-button fond-black"
+              target="_blank"
+              lang="en"
+              translate="no"
+              ><i class="fas fa-mobile-alt"></i> Expense Tracker</a
+            >
+          </p>
+        </div>
+        <div class="container col-1">
+          <img
+            class="image-round"
+            src="assets/img/Expense_tracker.png"
+            alt="Buildings"
+            width="350"
+            height="200"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer class="text-center fond-black padding-64">
+      <a href="#home" class="bouton-button light-grey"
+        ><i class="fa fa-arrow-up margin-right"></i>To the top</a
+      >
+      <div class="xlarge margin-16">
+        <i class="fa fa-facebook-official hover-opacity"></i>
+        <i class="fa fa-instagram hover-opacity"></i>
+        <i class="fa fa-github hover-opacity"></i>
+        <i class="fa fa-pinterest-p hover-opacity"></i>
+        <i class="fa fa-twitter hover-opacity"></i>
+        <i class="fa fa-linkedin hover-opacity"></i>
+      </div>
+      <p>
+        Powered by
+        <a
+          href="https://github.com/Mikhail2409"
+          title="GitHub.Mikhail"
+          target="_blank"
+          >Mikhail</a
+        >
+      </p>
+    </footer>
+
+    <script src="assets/js/basic.js"></script>
+  </body>
+</html>

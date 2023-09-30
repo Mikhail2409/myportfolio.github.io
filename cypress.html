@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- FONTAWESOME STYLES-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="assets/css/basic.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway|Nabla&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>
+     <!-- Advantages Section -->
+     <div class="section-container light-grey padding-64">
+      <div class="row-padding">
+        <div class="col-1">
+          <h3>Cypress</h3>
+          <ul>
+            <li>
+              Tests end-to-end dans le navigateur : Cypress facilite la validation de l'API avec <br /> l'interface utilisateur. 
+            </li>
+            <li>
+              Syntaxe simple et expressive : ce qui facilite la création et la maintenance des tests. 
+            </li>
+            <li>
+              Fonctionnalités de debogage : Cypress offre des fonctionnalités de debogage en direct, <br /> permettant aux testeurs de voir ce qui se passe à chaque étape du test.
+            <li>
+              Bonne documentation : Cypress dispose d'une documentation approfondie, ce qui <br /> facilite l'apprentissage et l'utilisation de l'outil. 
+            </li>
+          </ul>          
+        </div>
+        <div class="col-1">
+          <p id="espace-wide" lang="en" translate="no">
+            <i class="fa fa-desktop margin-right"></i>L'interface utilisateur
+          </p>
+          <div class="semi-grey">
+            <div
+              class="section-container dark-grey text-center"
+              style="width: 85%"
+            >
+              85%
+            </div>
+          </div>
+          <p id="espace-wide" lang="en" translate="no">
+            <i class="fas fa-file-code margin-right"></i>Script
+          </p>
+          <div class="semi-grey">
+            <div
+              class="section-container dark-grey text-center"
+              style="width: 75%"
+            >
+              75%
+            </div>
+          </div>
+          <p id="espace-wide">
+            <i class="fa fa-book margin-right"></i>Documentation détaillée 
+          </p>
+          <div class="semi-grey">
+            <div
+              class="section-container dark-grey text-center"
+              style="width: 90%"
+            >
+              90%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section "Statistics" -->
+    <div class="section-container text-center dark-grey padding-64">
+      <div class="quarter">
+        <span class="xxlarge">1 million +</span>
+        <br />Tests / jour
+      </div>
+      <div class="quarter">
+        <span class="xxlarge">30 000 +</span>
+        <br />Utilisateurs actifs
+      </div>
+      <div class="quarter">
+        <span class="xxlarge">1 500 +</span>
+        <br />ESN
+      </div>
+      <div class="quarter">
+        <span class="xxlarge">1 500 +</span>
+        <br />Contributeurs sur GitHub
+      </div>
+    </div>
+   
+    <!-- Screenshot Section -->
+    <div class="section-container" style="padding: 128px 16px" id="work">
+      <h3 class="text-center uppercase">Captures d'écran</h3>
+      <p class="text-center espace-large">J'ai utilisé le Framework Cypress pour tester l'API Trello en simulant l'interaction de l'utilisateur avec différents composants de manière intégrée. </p>
+
+      <div class="row-padding" style="margin-top: 64px">
+        <div class="col-1 additional">
+          <!--divs avec les classes "col-1 additional". Chacune de ces divs contient une image avec une largeur de 100%
+          "this" comme argument permet à la fonction "onClick" de savoir quelle image a été cliquée.-->
+          <img
+            src="assets/img/Cypress_open.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Cypress open"
+          />
+        </div>
+        <div class="col-1 additional">
+          <img
+            src="assets/img/Cypress_trello.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Go to Trello"
+          />
+        </div>
+        <div class="col-1 additional">
+          <img
+            src="assets/img/Cypress_dashboard.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Connection to Dashboard"
+          />
+        </div>
+        <div class="col-1 additional">
+          <img
+            src="assets/img/Cypress_commands_connexion.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Connection via commands"
+          />
+        </div>
+      </div>
+
+      <div class="row-padding margin-16">
+        <div class="col-1 additional">
+          <img
+            src="assets/img/Cypress_env_json_login.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Contact login"
+          />
+        </div>
+        <div class="col-1 additional">
+          <img
+            src="assets/img/Cypress_tableaux.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Cypress scripts"
+          />
+        </div>
+        <div class="col-1 additional">
+          <img
+            src="assets/img/Cypress_dashboard_tableaux.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Seen on Dashboard"
+          />
+        </div>
+        <div class="col-1 additional">
+          <img
+            src="assets/img/Cypress_html.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Report in HTML"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal pour les images en grande taille au clic-->
+    <div
+      id="modal01"
+      class="boite-modal fond-black"
+      onclick="this.style.display='none'"
+    >
+      <span
+        class="bouton-button xxlarge fond-black padding-large fermeture-topright"
+        title="Fermer l'image modale"
+        >×</span
+      >
+      <!--Fonction "onClick" est définie dans le code JavaScript. Lorsqu'elle est appelée avec l'objet "this", elle peut accéder aux propriétés et aux attributs de l'image qui a été cliquée, comme la source de l'image. Elle utilise ensuite ces informations pour afficher une version agrandie de l'image dans une boîte modale.-->
+      <div
+        class="modal-content animate-zoom text-center modal-transparent padding-64"
+      >
+        <img id="img01" class="image-round" />
+        <p id="caption" class="semi-opacity espace-large"></p>
+      </div>
+    </div>
+    
+    <!-- Contact Section -->
+    <div
+      class="section-container light-grey"
+      style="padding: 128px 16px"
+      id="contact"
+    >
+      <h3 class="text-center">CYPRESS</h3>
+      <p class="text-center espace-large">Le résultat du test est disponible sur le tableau de bord pour :</p>
+      <div style="margin-top: 48px">
+        <!-- Cypress Section -->
+    
+      <div class="row-padding">
+        <div class="col-1">
+          <h3>Meilleure communication</h3>
+          <p>
+            La présence de fonctionnalités de capture d'écran et de génération de vidéos dans Cypress a un impact significatif sur le processus de développement et de test. Grâce à ces fonctionnalités, l'équipe de développement et l'équipe de test peuvent facilement détecter et résoudre les problèmes.<br />   
+          </p>
+          <p>
+            La possibilité de capturer des captures d'écran et de générer des vidéos des tests est extrêmement utile pour la détection des problèmes. Lorsqu'un test échoue, les développeurs peuvent immédiatement voir ce qui s'est passé en examinant la capture d'écran ou la vidéo correspondante. Cela permet une identification rapide des erreurs et des problèmes, ce qui facilite leur résolution.
+          </p>
+        </div>
+        <div class="col-1">
+          <h3>Partager les résultats</h3>
+          <p>
+            Les développeurs peuvent ainsi voir en temps réel comment les tests s'exécutent dans le navigateur et comprendre l'origine des éventuels échecs.<br />   
+          </p>
+          <p>
+            La vidéo montre des tests automatisés réalisés à l'aide du framework Cypress, qui testent l'API Trello de bout en bout. En seulement 2 minutes et 45 secondes, ces tests simulent différentes actions d'un utilisateur, telles que la manipulation d'un tableau, d'une carte, d'étiquettes, d'un fichier et d'une image. Grâce à la capacité de capture d'écran et de génération de vidéos de Cypress, ces tests peuvent être exécutés rapidement et efficacement, tout en fournissant des informations visuelles précieuses sur leur exécution.
+          </p>
+        </div>
+      </div>
+    
+        
+        <br />
+        
+        <!-- Vidéo -->
+        <div class="image-round" style="width: 100%; margin-top: 48px;">
+          <video width="100%" height="700" controls>
+            <source src="assets/img/trello_compresse.mp4" type="video/mp4">
+            Votre navigateur ne prend pas en charge la balise vidéo.
+          </video>
+        </div>
+      </div>
+    </div>
+
+    <script src="assets/js/basic.js"></script>
+  </body>
+</html>

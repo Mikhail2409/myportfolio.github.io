@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- FONTAWESOME STYLES-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="assets/css/basic.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway|Nabla&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>  
+    <!-- Advantages Section -->
+    <div class="section-container light-grey padding-64">
+      <div class="row-padding">
+        <div class="col-1">
+          <h3>JMeter</h3>
+          <ul>
+            <li>
+              Capacité à gérer des charges élevées : JMeter est spécialement conçu pour tester les<br /> performances et la charge d'une application.
+            </li>
+            <li>
+              Possibilité de simuler différents types de requêtes : notamment HTTP, FTP, SOAP, <br /> REST, etc., offrant ainsi une flexibilité lors des tests. 
+            </li>
+            <li>
+              Fonctionnalités de rapport et d'analyse : JMeter offre des fonctionnalités avancées de <br /> génération de rapports et d'analyse des performances. 
+            <li>
+              Extensibilité : JMeter permet d'ajouter des plugins tiers.
+            </li>
+          </ul>          
+        </div>
+        <div class="col-1">
+          <p id="espace-wide" lang="en" translate="no">
+            <i class="fas fa-chart-line margin-right"></i>Tests de performance
+          </p>
+          <div class="semi-grey">
+            <div
+              class="section-container dark-grey text-center"
+              style="width: 85%"
+            >
+              85%
+            </div>
+          </div>
+          <p id="espace-wide" lang="en" translate="no">
+            <i class="fas fa-file-code margin-right"></i>Script
+          </p>
+          <div class="semi-grey">
+            <div
+              class="section-container dark-grey text-center"
+              style="width: 75%"
+            >
+              75%
+            </div>
+          </div>
+          <p id="espace-wide">
+            <i class="fa fa-book margin-right"></i>Documentation détaillée 
+          </p>
+          <div class="semi-grey">
+            <div
+              class="section-container dark-grey text-center"
+              style="width: 80%"
+            >
+              80%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section "Statistics" -->
+    <div class="section-container text-center dark-grey padding-64">
+      <div class="quarter">
+        <span class="xxlarge">500 000 +</span>
+        <br />Téléchargements / an
+      </div>
+      <div class="quarter">
+        <span class="xxlarge">1,5 million +</span>
+        <br />Utilisateurs
+      </div>
+      <div class="quarter">
+        <span class="xxlarge">1 000 +</span>
+        <br />Contributeurs actifs
+      </div>
+      <div class="quarter">
+        <span class="xxlarge">200 +</span>
+        <br />Langues différentes
+      </div>
+    </div>
+    
+    <!-- Screenshot Section -->
+    <div class="section-container" style="padding: 128px 16px" id="work">
+      <h3 class="text-center uppercase">Captures d'écran</h3>
+      <p class="text-center espace-large">J'ai utilisé JMeter afin de réaliser des tests de performance et de charge sur le site Google, dans le but de garantir sa capacité à gérer efficacement un grand nombre d'utilisateurs et de requêtes simultanées sans affecter ses performances. </p>
+
+      <div class="row-padding" style="margin-top: 64px">
+        <div class="col-1 additional">
+          <!--divs avec les classes "col-1 additional". Chacune de ces divs contient une image avec une largeur de 100%
+          "this" comme argument permet à la fonction "onClick" de savoir quelle image a été cliquée.-->
+          <img
+            src="assets/img/jmeter_thread_group.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Création thread group"
+          />
+        </div>
+        <div class="col-1 additional">
+          <img
+            src="assets/img/jmeter_samplers.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Création requêtes HTTP"
+          />
+        </div>
+        <div class="col-1 additional">
+          <img
+            src="assets/img/jmeter_variables.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Création variables"
+          />
+        </div>
+        <div class="col-1 additional">
+          <img
+            src="assets/img/jmeter_view_results_tree.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Résultats en arbre"
+          />
+        </div>
+      </div>
+
+      <div class="row-padding margin-16">
+        <div class="col-1 additional">
+          <img
+            src="assets/img/jmeter_view_results_tree_html.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Vue en html "
+          />
+        </div>
+        <div class="col-1 additional">
+          <img
+            src="assets/img/jmeter_view_results_table.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Rapports en tableau"
+          />
+        </div>
+        <div class="col-1 additional">
+          <img
+            src="assets/img/jmeter_graph_results.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Résultats du graphique"
+          />
+        </div>
+        <div class="col-1 additional">
+          <img
+            src="assets/img/jmeter_data_writer_excel.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Vue en Excel"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal pour les images en grande taille au clic-->
+    <div
+      id="modal01"
+      class="boite-modal fond-black"
+      onclick="this.style.display='none'"
+    >
+      <span
+        class="bouton-button xxlarge fond-black padding-large fermeture-topright"
+        title="Fermer l'image modale"
+        >×</span
+      >
+      <!--Fonction "onClick" est définie dans le code JavaScript. Lorsqu'elle est appelée avec l'objet "this", elle peut accéder aux propriétés et aux attributs de l'image qui a été cliquée, comme la source de l'image. Elle utilise ensuite ces informations pour afficher une version agrandie de l'image dans une boîte modale.-->
+      <div
+        class="modal-content animate-zoom text-center modal-transparent padding-64"
+      >
+        <img id="img01" class="image-round" />
+        <p id="caption" class="semi-opacity espace-large"></p>
+      </div>
+    </div>    
+    
+    <script src="assets/js/basic.js"></script>
+  </body>
+</html>

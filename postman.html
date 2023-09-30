@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <!-- FONTAWESOME STYLES-->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <link href="assets/css/basic.css" rel="stylesheet" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway|Nabla&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+  </head>
+  <body>   
+    <!-- Advantages Section -->
+    <div class="section-container light-grey padding-64">
+      <div class="row-padding">
+        <div class="col-1">
+          <h3>Postman</h3>
+          <ul>
+            <li>
+              Interface utilisateur conviviale : ce qui facilite la création et l'exécution des tests.
+            </li>
+            <li>
+              Prise en charge des environnements variables : Il permet de configurer des variables <br /> d'environnement pour simplifier les tests et faciliter la maintenance.
+            </li>
+            <li>
+              Fonctionnalités de collaboration : Postman permet la collaboration entre les membres <br /> d'une équipe, ce qui facilite le partage des tests et la gestion des configurations.
+            <li>
+              Documentation générée automatiquement : Postman génère automatiquement une <br /> documentation détaillée des tests, ce qui facilite la compréhension et le suivi.
+            </li>
+          </ul>          
+        </div>
+        <div class="col-1">
+          <p id="espace-wide" lang="en" translate="no">
+            <i class="fa fa-desktop margin-right"></i>Facilité d'utilisation
+          </p>
+          <div class="semi-grey">
+            <div
+              class="section-container dark-grey text-center"
+              style="width: 70%"
+            >
+              70%
+            </div>
+          </div>
+          <p id="espace-wide" lang="en" translate="no">
+            <i class="fas fa-file-code margin-right"></i>Script
+          </p>
+          <div class="semi-grey">
+            <div
+              class="section-container dark-grey text-center"
+              style="width: 80%"
+            >
+              80%
+            </div>
+          </div>
+          <p id="espace-wide">
+            <i class="fa fa-book margin-right"></i>Documentation détaillée 
+          </p>
+          <div class="semi-grey">
+            <div
+              class="section-container dark-grey text-center"
+              style="width: 80%"
+            >
+              80%
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Section "Statistics" -->
+    <div class="section-container text-center dark-grey padding-64">
+      <div class="quarter">
+        <span class="xxlarge">13 millions +</span>
+        <br />Téléchargements
+      </div>
+      <div class="quarter">
+        <span class="xxlarge">500 000 +</span>
+        <br />Utilisateurs actifs
+      </div>
+      <div class="quarter">
+        <span class="xxlarge">36 000 +</span>
+        <br />Contributeurs actifs
+      </div>
+      <div class="quarter">
+        <span class="xxlarge">98% +</span>
+        <br />ESN du classement Fortune 
+      </div>
+    </div>
+    
+    <!-- Screenshot Section -->
+    <div class="section-container" style="padding: 128px 16px" id="work">
+      <h3 class="text-center">POSTMAN</h3>
+      <p class="text-center espace-large">J'ai effectué des tests sur l'API Reqres pour créer, envoyer et </br>gérer des requêtes HTTP, ainsi que pour vérifier les réponses obtenues. </p>
+
+      <div class="row-padding" style="margin-top: 64px">
+        <div class="col-1 additional">
+          <!--divs avec les classes "col-1 additional". Chacune de ces divs contient une image avec une largeur de 100%
+          "this" comme argument permet à la fonction "onClick" de savoir quelle image a été cliquée.-->
+          <img
+            src="assets/img/Postman_creation_compte.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Création un compte"
+          />
+        </div>
+        <div class="col-1 additional">
+          <img
+            src="assets/img/Postman_work.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Création une catégorie"
+          />
+        </div>
+        <div class="col-1 additional">
+          <img
+            src="assets/img/Postman_test_200.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Informations demandées OK"
+          />
+        </div>
+        <div class="col-1 additional">
+          <img
+            src="assets/img/Postman_test_201.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Nouvelle création OK"
+          />
+        </div>
+      </div>
+
+      <div class="row-padding margin-16">
+        <div class="col-1 additional">
+          <img
+            src="assets/img/Postman_test_json.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Présence d'une propriété OK"
+          />
+        </div>
+        <div class="col-1 additional">
+          <img
+            src="assets/img/Postman_token.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Récupération un token"
+          />
+        </div>
+        <div class="col-1 additional">
+          <img
+            src="assets/img/Postman_variable.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Variable"
+          />
+        </div>
+        <div class="col-1 additional">
+          <img
+            src="assets/img/Postman_newman.png"
+            style="width: 100%"
+            onclick="onClick(this)"
+            class="hover-opacity"
+            alt="Rapport"
+          />
+        </div>
+      </div>
+    </div>
+
+    <!-- Modal pour les images en grande taille au clic-->
+    <div
+      id="modal01"
+      class="boite-modal fond-black"
+      onclick="this.style.display='none'"
+    >
+      <span
+        class="bouton-button xxlarge fond-black padding-large fermeture-topright"
+        title="Fermer l'image modale"
+        >×</span
+      >
+      <!--Fonction "onClick" est définie dans le code JavaScript. Lorsqu'elle est appelée avec l'objet "this", elle peut accéder aux propriétés et aux attributs de l'image qui a été cliquée, comme la source de l'image. Elle utilise ensuite ces informations pour afficher une version agrandie de l'image dans une boîte modale.-->
+      <div
+        class="modal-content animate-zoom text-center modal-transparent padding-64"
+      >
+        <img id="img01" class="image-round" />
+        <p id="caption" class="semi-opacity espace-large"></p>
+      </div>
+    </div>
+    
+    <script src="assets/js/basic.js"></script>
+  </body>
+</html>
