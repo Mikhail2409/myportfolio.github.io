@@ -66,7 +66,8 @@ img {
   overflow: clip;
   border-style: none;
 }
-p, label {
+p,
+label {
   display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
@@ -346,10 +347,7 @@ input {
 .espace-large {
   font-size: 18px !important;
 }
-#fondWhite {
-  color: #000 !important;
-  background-color: #fff !important;
-}
+
 .padding-large {
   padding: 12px 24px !important;
   margin-top: 16px !important;
@@ -411,6 +409,9 @@ input {
 .padding-64 {
   padding-top: 64px !important;
   padding-bottom: 64px !important;
+}
+.hover-shadow:hover {
+  box-shadow: 0 4px 10px 0 rgba(0, 0, 0, 0.2), 0 4px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .boite-modal {
   z-index: 3;
@@ -474,11 +475,15 @@ input {
 .box-red {
   color: #fff !important;
   background-color: #f44336 !important;
-  padding-top: 48px !important;
-  padding-bottom: 48px !important;
+  padding-top: 32px !important;
+  padding-bottom: 32px !important;
 }
 .list-ul li:last-child {
   border-bottom: none;
+}
+#fondWhite {
+  color: #000 !important;
+  background-color: #fff !important;
 }
 .padding-24 {
   padding-top: 24px !important;
